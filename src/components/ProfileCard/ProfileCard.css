@@ -1,0 +1,7 @@
+.profile-card {
+	width: auto;
+	height: auto;
+	border: 2pt solid black;
+	border-radius: 2rem;
+	padding: 2rem;
+}
