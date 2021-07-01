@@ -1,21 +1,23 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch, Link, useLocation, useContext } from 'react-router-dom';
+import React, { useState, useContext } from 'react';
+import { BrowserRouter as Router, Route, Switch, Link, useLocation } from 'react-router-dom';
 import LandingPage from './pages/LandingPage/Landingpage';
 import ProfilePage from './pages/ProfilePage/Profilepage';
-import Community from './pages/Community/Community';
+import CommunityPage from './pages/CommunityPage/Communitypage';
 import NavBar from './components/NavBar/Navbar';
 
 function App() {
-
+  const [isLoggedIn, setLoggedIn] = useState(false);
+  const CommunityContext = React.createContext()
 
   return (
     <div className="App">
-        <NavBar/>
+      <NavBar isLoggedIn={isLoggedIn}/>
         
         <Switch>
           <Route exact path="/"><LandingPage/></Route>
           <Route path="/profile"><ProfilePage /></Route>
-          <Route path="/community"><Community /></Route>
+        <Route path="/community"><CommunityPage /></Route>
         </Switch>
     </div >
   );

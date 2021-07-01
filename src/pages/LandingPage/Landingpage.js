@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import HomePage from '../HomePage/Homepage';
 
-export default function LandingPage() {
-    const [isLoggedIn, setLoggedIn] = useState(false);
+export default function LandingPage(isLoggedIn) {
+    
     if (isLoggedIn) {
             return (
             <HomePage/>
