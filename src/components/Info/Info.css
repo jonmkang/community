@@ -1,0 +1,13 @@
+.info-container {
+	text-transform: capitalize;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info-container p,
+.info-container h5 {
+	margin: 1rem;
+	padding: 0;
+}

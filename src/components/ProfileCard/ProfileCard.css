@@ -1,7 +1,17 @@
 .profile-card {
 	width: auto;
 	height: auto;
-	border: 2pt solid black;
-	border-radius: 2rem;
-	padding: 2rem;
+	border: 1pt solid rgb(6, 52, 202);
+	border-radius: 0.75rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	box-shadow: 5px 5px 10px;
+	transition-duration: 0.75s;
+}
+
+.profile-card:hover {
+	box-shadow: inset 0px 0px 10px;
+	cursor: pointer;
 }

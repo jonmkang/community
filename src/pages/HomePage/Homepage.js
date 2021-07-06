@@ -4,7 +4,7 @@ export default function HomePage() {
     
     return (
         <div class="homepage">
-            <h1>Welcome to Community!</h1>
+            <h1>Welcome to BK Community!</h1>
             <div class="left homepage-details">
                 <h3>If you're wondering what this is...</h3>
                 <p>

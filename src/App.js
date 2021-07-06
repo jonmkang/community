@@ -7,7 +7,7 @@ import CommunityPage from './pages/CommunityPage/Communitypage';
 import NavBar from './components/NavBar/Navbar';
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(false);
+  const [isLoggedIn, setLoggedIn] = useState(true);
   const CommunityContext = React.createContext()
 
   return (
